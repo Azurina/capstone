@@ -29,6 +29,7 @@ public class TextRecognizer {
 		Mat image = new Mat();
 		//Features2d.drawKeypoints(mat, keypoint, image, Scalar.all(-1), );
 		Features2d.drawKeypoints(mat, keypoint, image);
+		System.out.println("Detection done!");
 		Highgui.imwrite("picture/test3.jpg", image);
 	}
 
